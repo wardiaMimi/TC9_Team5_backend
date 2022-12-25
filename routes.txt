@@ -1,0 +1,77 @@
+URL = "http://localhost"
+
+
+URL + /register 
+input = email, password,username
+
+
+/all 
+all announcements
+
+/annonces 
+annonces non vendu 
+
+/favori/:id 
+input = annonce_id
+annonce favoris dun user 
+
+
+id = user id 
+liked announcements 
+
+/annonces/:id 
+get one annonce 
+
+/login 
+input = email , password
+
+/predict 
+input = {'year','km_driven','fuel' ,'seller_type' ,'transmission'
+         'owner','engine', 'mileage','max_power' }
+
+output = predicted price 
+
+
+/add
+input = {'year','km_driven','fuel' ,'seller_type' ,'transmission'
+         'owner','engine', 'mileage','max_power' , 'selling_price' ,'predicted_price'}
+ajouter une annonce  apres la validation du prix     
+
+
+/modify
+input = annonce id ,annonce_id , selling_price,  seats ,torque, name , year , km_driven,  transmission, seller_type ,owner ,  mileage 
+ , engine ,  max_power ,  fuel 
+modifier une annonce 
+
+
+/delete/:annonce_id
+input = annonce id
+supprimer une annonce
+
+/buy/:buyer_id/annonce_id
+input = annonce id , buyer_id 
+acheter une voiture 
+
+/like 
+input = annonce id 
+liker une annonce
+
+/dislike 
+input = annonce id 
+annuler le like 
+
+
+/comment/annonce_id
+input = annonce id 
+commenter une annonce 
+
+
+/discomment/comment_id
+input = comment id 
+supprimer un commentaire
+
+
+/comments/annonce_id
+input = annonce id 
+les commentaire d'une annonce
+
